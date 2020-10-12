@@ -1,4 +1,4 @@
-#Lab 3: Tiny Tidy Backup
+#Lab 3: Tiny Tidy Backup  
 The lab furthers our knowledge of how to use commands in a shell script. The goal is to create a script where a source directory is specified and it is backed up to a destination directory as a tar archive. As an added bonus, the script will process command line options and have an option to write the backup to a remote computer via ssh.
 
 Goals
