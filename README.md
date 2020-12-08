@@ -1,4 +1,4 @@
-# Lab 3: Tiny Tidy Backup  
+# Tiny Tidy Backup  
 The lab furthers our knowledge of how to use commands in a shell script. The goal is to create a script where a source directory is specified and it is backed up to a destination directory as a tar archive. As an added bonus, the script will process command line options and have an option to write the backup to a remote computer via ssh.
 
 ## Goals
@@ -32,19 +32,3 @@ The script understands the following options:
 -v Verbose mode; Make the script very verbose by printing out every step that it does and every file that is being backed up.
 -h Help; print out a usage message
 Note that the options are not mutually exclusive which means that any of the above options can be used in any combination with one another. Command line arguments can easily be processed using the getopts command.
-
-In order to complete a remote backup, you will need to use the ssh command and the dd command or split command. If the output of the backup shall be small enough to fit in a single file, dd is a good utility to use. If the backup files will be too large, then use split to create many smaller files which can be reassembled to restore the computer.
-
-Additionally, if the program is run without any parameters it prints out a usage message indicating the correct usage of the script. The usage message is like an online help message explaining to the user how to correctly invoke the script.
-
-Remember to add a hash-bang (#!) and include a header at the top of the file with your full name, email address, class, and section number. Include a brief one or two line description of the shell script and any software requirements the script has beyond what is included with Tuffix.
-
-Pushing code to Git (submitting your assignment)
-To submit your code, you will need to add the files that you want to submit, commit your changes, and push them into the GitHub repository.
-
-Rubric (10 points)
-(5 points) tinytidybackup is named correctly, operates correctly according to the specification, and can create backups locally.
-(3 points) The script can perform remote backups.
-(1 points) The script has an appropriate header and help message.
-(1 points) The script appends checksums correctly to the appropriate file.
-Assignments that are not submitted through GitHub shall not be graded.
